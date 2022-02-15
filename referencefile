@@ -1,0 +1,29 @@
+1. Launch an instance,
+    install git
+    setup SSH  ####### https://docs.gitlab.com/ee/ssh/index.html#generate-an-ssh-key-pair
+    intsall gitlab-runners  #####https://docs.gitlab.com/runner/install/linux-repository.html
+        OBTAIN A   TOKEN   
+        register it    #######  
+    install terraform  #######     https://learn.hashicorp.com/tutorials/terraform/install-cli
+    install aws-vault and configure it.  ####   https://github.com/99designs/aws-vault#:~:text=AWS%20Vault%20is%20a%20tool,to%20your%20shell%20and%20applications.
+
+        sudo curl -L -o /usr/local/bin/aws-vault https://github.com/99designs/aws-vault/releases/download/v6.4.0/aws-vault-linux-amd64
+        sudo chmod 755 /usr/local/bin/aws-vault
+
+    aws-vault --backend=file add username
+
+
+
+    Gitlab-runner: https://docs.gitlab.com/runner/install/linux-manually.html
+
+======================================>
+Obtain a token:
+In the top-right corner, select your avatar.
+Select Edit profile.
+On the left sidebar, select Access Tokens.
+Enter a name and optional expiry date for the token.
+Select the desired scopes.
+Select Create personal access token.
+Save the personal access token somewhere safe. After you leave the page, you no longer have access to the token.
+
+https://gitlab.com/
